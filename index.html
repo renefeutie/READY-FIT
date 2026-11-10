@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>READY FIT | Salle de Sport & Performance Haute Intensité</title>
+  <meta name="description" content="Dépassez vos limites chez READY FIT. Salle de musculation, cardio, CrossFit, boxe, yoga et coaching personnalisé. Planning 7j/7, tarifs FCFA et calculateur d'IMC.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="READY FIT | Salle de Sport & Performance Haute Intensité">
+  <meta property="og:description" content="Centre de haute performance et de conditionnement athlétique. Musculation, CrossFit, Boxe, Yoga et Coaching d'élite.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts: Bebas Neue, Oswald & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Feuille de style CSS3 pur -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Lien d'évitement accessibilité -->
+  <a href="#main-content" class="skip-link" data-i18n="skip_link">Aller au contenu principal</a>
+
+  <!-- ========================================================================
+       1. HEADER FIXE & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      
+      <!-- Logo -->
+      <a href="#home" class="logo" aria-label="READY FIT Accueil">
+        <span class="logo-ready">READY</span>
+        <span class="logo-fit">FIT</span>
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav class="nav-menu" role="navigation" aria-label="Navigation principale">
+        <a href="#home" class="nav-link active" data-i18n="nav_home">Accueil</a>
+        <a href="#about" class="nav-link" data-i18n="nav_about">À propos</a>
+        <a href="#disciplines" class="nav-link" data-i18n="nav_disciplines">Disciplines</a>
+        <a href="#schedule" class="nav-link" data-i18n="nav_schedule">Planning</a>
+        <a href="#pricing" class="nav-link" data-i18n="nav_pricing">Tarifs</a>
+        <a href="#bmi" class="nav-link">IMC</a>
+        <a href="#coaches" class="nav-link" data-i18n="nav_coaches">Coachs</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <!-- Actions Header -->
+      <div class="header-actions">
+        <!-- Sélecteur de langue bilingue instantané -->
+        <div class="lang-switcher" role="group" data-i18n-aria="nav_lang_label" aria-label="Sélecteur de langue">
+          <button type="button" class="lang-btn active" data-lang="fr" aria-pressed="true">FR</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+
+        <!-- Bouton Rejoindre -->
+        <a href="#pricing" class="btn btn--primary" data-i18n="nav_join">Rejoindre</a>
+
+        <!-- Burger mobile -->
+        <button type="button" class="burger-btn" aria-label="Ouvrir le menu mobile" aria-expanded="false">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Menu Mobile Overlay -->
+  <div class="mobile-nav-overlay" role="dialog" aria-modal="true" aria-label="Menu de navigation mobile">
+    <a href="#home" class="nav-link" data-i18n="nav_home">Accueil</a>
+    <a href="#about" class="nav-link" data-i18n="nav_about">À propos</a>
+    <a href="#disciplines" class="nav-link" data-i18n="nav_disciplines">Disciplines</a>
+    <a href="#schedule" class="nav-link" data-i18n="nav_schedule">Planning</a>
+    <a href="#pricing" class="nav-link" data-i18n="nav_pricing">Tarifs</a>
+    <a href="#bmi" class="nav-link">Calculateur IMC</a>
+    <a href="#coaches" class="nav-link" data-i18n="nav_coaches">Coachs</a>
+    <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+    <a href="#pricing" class="btn btn--primary btn--full" style="max-width: 280px;" data-i18n="nav_join">Rejoindre</a>
+  </div>
+
+  <main id="main-content">
+    
+    <!-- ========================================================================
+         2. HERO SECTION
+         ======================================================================== -->
+    <section id="home" class="hero-section">
+      <div class="hero-backdrop-grid"></div>
+      <div class="hero-glow-orb"></div>
+
+      <div class="container hero-content">
+        <span class="hero-kicker reveal-on-scroll" data-i18n="hero_kicker">CENTRE DE HAUTE PERFORMANCE & CONDITIONNEMENT</span>
+        
+        <h1 class="hero-title reveal-on-scroll" data-i18n="hero_title">SOIS PRÊT. DÉPASSE-TOI.</h1>
+        
+        <p class="hero-subtitle reveal-on-scroll" data-i18n="hero_subtitle">
+          Plus qu'une salle de sport : un sanctuaire d'acier, de discipline et de résultats concrets. Rejoins l'élite et libère ton potentiel athlétique maximal.
+        </p>
+
+        <div class="hero-actions reveal-on-scroll">
+          <a href="#pricing" class="btn btn--primary" data-i18n="hero_btn_join">S'inscrire maintenant</a>
+          <a href="#schedule" class="btn btn--secondary" data-i18n="hero_btn_schedule">Voir le planning</a>
+        </div>
+
+        <!-- 3 Chiffres clés animés -->
+        <div class="hero-stats reveal-on-scroll">
+          <div class="stat-item">
+            <span class="stat-num" id="stat-members-val">500+</span>
+            <span class="stat-label" data-i18n="hero_stat_members_label">Membres actifs</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" id="stat-coaches-val">15</span>
+            <span class="stat-label" data-i18n="hero_stat_coaches_label">Coachs certifiés</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-i18n="hero_stat_open_num">7j/7</span>
+            <span class="stat-label" data-i18n="hero_stat_open_label">Accès & entraînements</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Indicateur de scroll -->
+      <a href="#about" class="hero-scroll-indicator" data-i18n-aria="hero_scroll" aria-label="Défiler vers le bas">
+        <div class="scroll-mouse">
+          <span class="scroll-wheel"></span>
+        </div>
+        <span data-i18n="hero_scroll">Défiler</span>
+      </a>
+    </section>
+
+
+    <!-- ========================================================================
+         3. SECTION À PROPOS
+         ======================================================================== -->
+    <section id="about" class="section">
+      <div class="container">
+        
+        <div class="about-grid">
+          
+          <!-- Visuel Athlétique SVG Sombre -->
+          <div class="about-visual reveal-on-scroll">
+            <svg class="about-graphic-svg" viewBox="0 0 540 460" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Illustration arène READY FIT">
+              <defs>
+                <linearGradient id="gradOrange" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#FF8A2B"/>
+                  <stop offset="100%" stop-color="#FF6B00"/>
+                </linearGradient>
+                <radialGradient id="gradRadialDark" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#242424"/>
+                  <stop offset="100%" stop-color="#0E0E0E"/>
+                </radialGradient>
+              </defs>
+              <!-- Fond géométrique -->
+              <rect x="20" y="20" width="500" height="420" rx="16" fill="url(#gradRadialDark)" stroke="#1E1E1E" stroke-width="2"/>
+              <!-- Lignes de grille de mesure biomécanique -->
+              <line x1="50" y1="120" x2="490" y2="120" stroke="#1E1E1E" stroke-width="1" stroke-dasharray="4 4"/>
+              <line x1="50" y1="230" x2="490" y2="230" stroke="#1E1E1E" stroke-width="1" stroke-dasharray="4 4"/>
+              <line x1="50" y1="340" x2="490" y2="340" stroke="#1E1E1E" stroke-width="1" stroke-dasharray="4 4"/>
+              <line x1="160" y1="50" x2="160" y2="410" stroke="#1E1E1E" stroke-width="1" stroke-dasharray="4 4"/>
+              <line x1="380" y1="50" x2="380" y2="410" stroke="#1E1E1E" stroke-width="1" stroke-dasharray="4 4"/>
+              <!-- Cercle de puissance central -->
+              <circle cx="270" cy="230" r="130" stroke="#1E1E1E" stroke-width="2"/>
+              <circle cx="270" cy="230" r="100" stroke="url(#gradOrange)" stroke-width="3" stroke-dasharray="12 6" opacity="0.8"/>
+              <circle cx="270" cy="230" r="70" fill="#141414" stroke="#FF6B00" stroke-width="2"/>
+              <!-- Silhouette Athlète Vectorielle Stylisée -->
+              <path d="M270 180 C277 180 282 174 282 168 C282 161 277 156 270 156 C263 156 258 161 258 168 C258 174 263 180 270 180 Z" fill="#FFFFFF"/>
+              <!-- Buste & Bras musclés -->
+              <path d="M246 195 L270 188 L294 195 L314 220 L302 228 L286 206 L286 244 L294 286 L278 286 L272 246 L268 246 L262 286 L246 286 L254 244 L254 206 L238 228 L226 220 Z" fill="#FFFFFF"/>
+              <!-- Anneaux de force dynamiques -->
+              <path d="M190 270 C210 300 240 315 270 315 C300 315 330 300 350 270" stroke="#FF6B00" stroke-width="4" stroke-linecap="round"/>
+              <path d="M210 290 C228 310 248 322 270 322 C292 322 312 310 330 290" stroke="#FF8A2B" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+              <!-- Points télémétriques -->
+              <circle cx="270" cy="188" r="4" fill="#FF6B00"/>
+              <circle cx="226" cy="220" r="4" fill="#FF6B00"/>
+              <circle cx="314" cy="220" r="4" fill="#FF6B00"/>
+              <circle cx="270" cy="315" r="4" fill="#FF6B00"/>
+            </svg>
+
+            <div class="about-badge-floating">
+              <div class="about-badge-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+                  <path d="M4 22h16"/>
+                  <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/>
+                  <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/>
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="about-badge-text">READY FIT ARENA</div>
+                <div class="about-badge-sub">2 400 M² DE PERFORMANCE</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Texte À propos -->
+          <div class="about-text-content reveal-on-scroll">
+            <span class="section-kicker" data-i18n="about_kicker">NOTRE HISTOIRE & PHILOSOPHIE</span>
+            <h2 class="section-title" data-i18n="about_title">FORGÉ POUR LES ATHLÈTES EN QUÊTE D'EXCELLENCE</h2>
+            <p data-i18n="about_p1">
+              Chez READY FIT, nous rejetons les compromis et les promesses faciles. Conçu selon les standards stricts des laboratoires de performance sportive, notre espace combine équipement biomécanique de pointe, encadrement d'élite et culture de dépassement.
+            </p>
+            <p data-i18n="about_p2">
+              Que tu débutes ton parcours de remise en forme ou que tu prépares une compétition sportive exigeante, notre infrastructure est configurée pour mesurer chaque progrès et transformer chaque goutte de sueur en puissance durable.
+            </p>
+
+            <!-- 3 Valeurs Clés -->
+            <div class="values-grid">
+              
+              <!-- Valeur 1 : Discipline -->
+              <div class="value-card">
+                <div class="value-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="m9 12 2 2 4-4"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="value-title" data-i18n="about_val1_title">Discipline</h3>
+                  <p class="value-desc" data-i18n="about_val1_desc">
+                    La rigueur quotidienne bâtit la confiance. Nous inculquons la constance qui transforme l'effort en habitude invincible.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Valeur 2 : Énergie -->
+              <div class="value-card">
+                <div class="value-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="value-title" data-i18n="about_val2_title">Énergie</h3>
+                  <p class="value-desc" data-i18n="about_val2_desc">
+                    Une atmosphère électrique portée par une acoustique immersive, un éclairage maîtrisé et une intensité contagieuse.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Valeur 3 : Communauté -->
+              <div class="value-card">
+                <div class="value-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="value-title" data-i18n="about_val3_title">Communauté</h3>
+                  <p class="value-desc" data-i18n="about_val3_desc">
+                    Une meute solidaire d'athlètes et de passionnés qui s'encouragent, se challengent et célèbrent chaque victoire ensemble.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         4. SECTION DISCIPLINES
+         ======================================================================== -->
+    <section id="disciplines" class="section section--alt">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker" data-i18n="disciplines_kicker">PROGRAMMES D'ENTRAÎNEMENT</span>
+          <h2 class="section-title" data-i18n="disciplines_title">EXPLORE NOS DISCIPLINES</h2>
+          <p class="section-subtitle" data-i18n="disciplines_subtitle">
+            Des curriculums structurés conçus par des préparateurs physiques pour sculpter la force, l'endurance et l'agilité.
+          </p>
+        </div>
+
+        <div class="disciplines-grid">
+          
+          <!-- Carte 1 : Musculation -->
+          <article class="discipline-card reveal-on-scroll">
+            <div class="discipline-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6.5 6.5 11 11"/>
+                <path d="m21 21-1-1"/>
+                <path d="m3 3 1 1"/>
+                <path d="m18 22 4-4"/>
+                <path d="m2 6 4-4"/>
+                <path d="m3 10 7-7"/>
+                <path d="m14 21 7-7"/>
+              </svg>
+            </div>
+            <h3 class="discipline-title" data-i18n="disc_strength_title">Musculation & Force</h3>
+            <p class="discipline-desc" data-i18n="disc_strength_desc">
+              Plateaux de force libres, charges olympiques Hammer Strength et guidées pour une hypertrophie et une puissance brute optimales.
+            </p>
+            <a href="#schedule" class="discipline-link">
+              <span data-i18n="hero_btn_schedule">Voir le planning</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <!-- Carte 2 : Cardio & Endurance -->
+          <article class="discipline-card reveal-on-scroll">
+            <div class="discipline-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+            </div>
+            <h3 class="discipline-title" data-i18n="disc_cardio_title">Cardio & Endurance</h3>
+            <p class="discipline-desc" data-i18n="disc_cardio_desc">
+              Rameurs, tapis inclinés, assault bikes et circuits HIIT haute cadence pour forger un cœur d'athlète et brûler un maximum de calories.
+            </p>
+            <a href="#schedule" class="discipline-link">
+              <span data-i18n="hero_btn_schedule">Voir le planning</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <!-- Carte 3 : CrossFit & WOD -->
+          <article class="discipline-card reveal-on-scroll">
+            <div class="discipline-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3 class="discipline-title" data-i18n="disc_crossfit_title">CrossFit & WOD</h3>
+            <p class="discipline-desc" data-i18n="disc_crossfit_desc">
+              Mouvements fonctionnels constamment variés à haute intensité : haltérophilie, gymnastique et conditionnement métabolique.
+            </p>
+            <a href="#schedule" class="discipline-link">
+              <span data-i18n="hero_btn_schedule">Voir le planning</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <!-- Carte 4 : Boxe & Fight Club -->
+          <article class="discipline-card reveal-on-scroll">
+            <div class="discipline-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 14a2 2 0 0 1 2-2h10a4 4 0 0 1 4 4v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/>
+                <path d="M6 12V7a4 4 0 0 1 8 0v5"/>
+                <path d="M10 2v2"/>
+              </svg>
+            </div>
+            <h3 class="discipline-title" data-i18n="disc_boxing_title">Boxe & Fight Club</h3>
+            <p class="discipline-desc" data-i18n="disc_boxing_desc">
+              Frappes au sac, travail aux pao, esquives et jeux de jambes pour affûter vos réflexes, votre explosivité et votre mental d'acier.
+            </p>
+            <a href="#schedule" class="discipline-link">
+              <span data-i18n="hero_btn_schedule">Voir le planning</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <!-- Carte 5 : Yoga & Mobilité -->
+          <article class="discipline-card reveal-on-scroll">
+            <div class="discipline-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="4" r="2"/>
+                <path d="m15 7-3 4-3-4"/>
+                <path d="m9 11-4 3 2 7 5-5 5 5 2-7-4-3"/>
+              </svg>
+            </div>
+            <h3 class="discipline-title" data-i18n="disc_yoga_title">Yoga & Mobilité</h3>
+            <p class="discipline-desc" data-i18n="disc_yoga_desc">
+              Vinyasa dynamique, décompression articulaire, renforcement profond et assouplissements pour prévenir les blessures.
+            </p>
+            <a href="#schedule" class="discipline-link">
+              <span data-i18n="hero_btn_schedule">Voir le planning</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <!-- Carte 6 : Coaching Personnalisé -->
+          <article class="discipline-card reveal-on-scroll">
+            <div class="discipline-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="6"/>
+                <circle cx="12" cy="12" r="2"/>
+              </svg>
+            </div>
+            <h3 class="discipline-title" data-i18n="disc_coach_title">Coaching Personnalisé</h3>
+            <p class="discipline-desc" data-i18n="disc_coach_desc">
+              Suivi individuel sur-mesure, bilan biomécanique, programmation nutritionnelle personnalisée et résultats garantis.
+            </p>
+            <a href="#contact" class="discipline-link">
+              <span data-i18n="nav_contact">Prendre rendez-vous</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         5. PLANNING DES COURS COLLECTIFS (FILTRABLE)
+         ======================================================================== -->
+    <section id="schedule" class="section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker" data-i18n="schedule_kicker">CALENDRIER HEBDOMADAIRE</span>
+          <h2 class="section-title" data-i18n="schedule_title">PLANNING DES COURS COLLECTIFS</h2>
+          <p class="section-subtitle" data-i18n="schedule_subtitle">
+            Filtrez par discipline pour découvrir les sessions animées chaque jour par notre équipe de coachs professionnels.
+          </p>
+        </div>
+
+        <!-- Filtres par discipline -->
+        <div class="schedule-filters reveal-on-scroll" role="tablist" aria-label="Filtres par discipline">
+          <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true" data-i18n="filter_all">Toutes les disciplines</button>
+          <button type="button" class="filter-btn" data-filter="crossfit" role="tab" aria-selected="false" data-i18n="filter_crossfit">CrossFit</button>
+          <button type="button" class="filter-btn" data-filter="boxing" role="tab" aria-selected="false" data-i18n="filter_boxing">Boxe</button>
+          <button type="button" class="filter-btn" data-filter="cardio" role="tab" aria-selected="false" data-i18n="filter_cardio">Cardio HIIT</button>
+          <button type="button" class="filter-btn" data-filter="yoga" role="tab" aria-selected="false" data-i18n="filter_yoga">Yoga & Mobilité</button>
+          <button type="button" class="filter-btn" data-filter="strength" role="tab" aria-selected="false" data-i18n="filter_strength">Force & Muscu</button>
+        </div>
+
+        <!-- Tableau Desktop -->
+        <div class="schedule-table-wrap reveal-on-scroll">
+          <table class="schedule-table" aria-label="Planning hebdomadaire des entraînements">
+            <thead>
+              <tr>
+                <th scope="col" data-i18n="table_head_day">Jour</th>
+                <th scope="col" data-i18n="table_head_time">Heure</th>
+                <th scope="col" data-i18n="table_head_discipline">Discipline</th>
+                <th scope="col" data-i18n="table_head_coach">Coach</th>
+                <th scope="col" data-i18n="table_head_level">Niveau</th>
+                <th scope="col" data-i18n="table_head_action">Réservation</th>
+              </tr>
+            </thead>
+            <tbody id="schedule-table-body">
+              <!-- Rempli dynamiquement par js/main.js -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Vue Cartes Mobile -->
+        <div id="schedule-cards-container" class="schedule-cards-mobile reveal-on-scroll">
+          <!-- Rempli dynamiquement par js/main.js pour mobile -->
+        </div>
+
+        <!-- État vide -->
+        <div id="schedule-empty-state" class="schedule-empty" style="display: none;" data-i18n="table_empty">
+          Aucune session trouvée pour ce filtre.
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         6. TARIFS (MENSUEL / ANNUEL EN FCFA)
+         ======================================================================== -->
+    <section id="pricing" class="section section--alt">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker" data-i18n="pricing_kicker">OFFRES & ABONNEMENTS</span>
+          <h2 class="section-title" data-i18n="pricing_title">DES TARIFS CLAIRS, SANS FRAIS CACHÉS</h2>
+          <p class="section-subtitle" data-i18n="pricing_subtitle">
+            Investissez dans votre capital santé et rejoignez READY FIT dès aujourd'hui. Tarification avantageuse en FCFA.
+          </p>
+        </div>
+
+        <!-- Bascule Mensuel / Annuel -->
+        <div class="billing-toggle-wrap reveal-on-scroll">
+          <div class="toggle-switch-container" role="radiogroup" aria-label="Période de facturation">
+            <button type="button" id="billing-monthly-btn" class="toggle-opt-btn active" role="radio" aria-checked="true" data-i18n="billing_monthly">
+              Mensuel
+            </button>
+            <button type="button" id="billing-annual-btn" class="toggle-opt-btn" role="radio" aria-checked="false" data-i18n="billing_annual">
+              Annuel (-20%)
+            </button>
+          </div>
+          <span class="badge-discount" data-i18n="annual_badge">2 MOIS OFFERTS</span>
+        </div>
+
+        <!-- Grille des formules -->
+        <div class="pricing-grid">
+          
+          <!-- Formule 1 : Basic -->
+          <div class="pricing-card reveal-on-scroll">
+            <div class="plan-header">
+              <h3 class="plan-title" data-i18n="plan_basic_title">BASIC</h3>
+              <p class="plan-desc" data-i18n="plan_basic_desc">
+                Idéal pour un entraînement autonome sur les plateaux de musculation et de cardio libre.
+              </p>
+            </div>
+            
+            <div class="plan-price-wrap">
+              <span class="plan-price-val" id="price-basic-val">25 000</span>
+              <span class="plan-currency" data-i18n="currency_fcfa">FCFA</span>
+              <span class="plan-period plan-period-label" data-i18n="per_month">/ mois</span>
+            </div>
+
+            <ul class="plan-features-list">
+              <li class="plan-feature-item">
+                <svg class="plan-feature-check" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span data-i18n="feat_access_gym">Accès libre salle musculation & cardio</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg class="plan-feature-check" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span data-i18n="feat_locker">Casiers sécurisés & douches chaudes</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg class="plan-feature-check" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span data-i18n="feat_app">Application de suivi d'entraînement</span>
+              </li>
+            </ul>
+
+            <button class="btn btn--secondary btn--full btn-select-plan" data-plan="Basic" data-i18n="plan_btn_select">
+              Choisir cette formule
+            </button>
+          </div>
+
+          <!-- Formule 2 : Premium (Mise en avant - Populaire) -->
+          <div class="pricing-card pricing-card--popular reveal-on-scroll">
+            <span class="popular-badge" data-i18n="plan_popular_badge">LE PLUS POPULAIRE</span>
+
+            <div class="plan-header">
+              <h3 class="plan-title" data-i18n="plan_premium_title">PREMIUM</h3>
+              <p class="plan-desc" data-i18n="plan_premium_desc">
+                La formule signature : accès illimité aux installations et à tous les cours collectifs dirigés.
+              </p>
+            </div>
+            
+            <div class="plan-price-wrap">
+              <span class="plan-price-val" id="price-premium-val">45 000</span>
+              <span class="plan-currency" data-i18n="currency_fcfa">FCFA</span>
+              <span class="plan-period plan-period-label" data-i18n="per_month">/ mois</span>
+            </div>
+
+            <ul class="plan-features-list">
+              <li class="plan-feature-item">
+                <svg class="plan-feature-check" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span data-i18n="feat_access_gym">Accès libre salle musculation & cardio</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg class="plan-feature-check" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span data-i18n="feat_classes">Accès illimité à tous les cours collectifs (CrossFit, Boxe, Yoga)</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg class="plan-feature-check" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span data-i18n="feat_assessment">1 bilan biomécanique complet offert</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg class="plan-feature-check" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span data-i18n="feat_guest">1 invitation invité gratuite par mois</span>
+              </li>
+            </ul>
+
+            <button class="btn btn--primary btn--full btn-select-plan" data-plan="Premium" data-i18n="plan_btn_select">
+              Choisir cette formule
+            </button>
+          </div>
+
+          <!-- Formule 3 : VIP Élite -->
+          <div class="pricing-card reveal-on-scroll">
+            <div class="plan-header">
+              <h3 class="plan-title" data-i18n="plan_vip_title">VIP ÉLITE</h3>
+              <p class="plan-desc" data-i18n="plan_vip_desc">
+                L'expérience absolue : coaching sur-mesure, espace récupération, nutrition et vestiaire dédié.
+              </p>
+            </div>
+            
+            <div class="plan-price-wrap">
+              <span class="plan-price-val" id="price-vip-val">75 000</span>
+              <span class="plan-currency" data-i18n="currency_fcfa">FCFA</span>
+              <span class="plan-period plan-period-label" data-i18n="per_month">/ mois</span>
+            </div>
+
+            <ul class="plan-features-list">
+              <li class="plan-feature-item">
+                <svg class="plan-feature-check" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span data-i18n="feat_classes">Accès total salle & tous cours collectifs</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg class="plan-feature-check" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span data-i18n="feat_vip_coaching">4 séances de coaching personnel / mois</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg class="plan-feature-check" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span data-i18n="feat_vip_nutrition">Plan nutritionnel personnalisé & réajusté</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg class="plan-feature-check" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span data-i18n="feat_vip_lounge">Accès espace récupération & sauna</span>
+              </li>
+            </ul>
+
+            <button class="btn btn--secondary btn--full btn-select-plan" data-plan="VIP Elite" data-i18n="plan_btn_select">
+              Choisir cette formule
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         7. CALCULATEUR D'IMC FONCTIONNEL
+         ======================================================================== -->
+    <section id="bmi" class="section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker" data-i18n="bmi_kicker">ANALYSE BIOMÉTRIQUE</span>
+          <h2 class="section-title" data-i18n="bmi_title">CALCULATEUR D'INDICE DE MASSE CORPORELLE</h2>
+          <p class="section-subtitle" data-i18n="bmi_subtitle">
+            Évaluez votre corpulence en quelques secondes pour cibler vos objectifs de transformation physique avec précision.
+          </p>
+        </div>
+
+        <div class="bmi-wrapper reveal-on-scroll">
+          <div class="bmi-grid">
+            
+            <!-- Formulaire de saisie -->
+            <form class="bmi-form" id="bmi-form" novalidate>
+              <div class="form-group">
+                <label for="bmi-weight" class="form-label" data-i18n="bmi_label_weight">Poids corporel (kg)</label>
+                <input type="number" id="bmi-weight" class="form-input" placeholder="Ex: 75" min="30" max="300" step="0.5" required data-i18n-placeholder="bmi_placeholder_weight">
+              </div>
+
+              <div class="form-group">
+                <label for="bmi-height" class="form-label" data-i18n="bmi_label_height">Taille (cm)</label>
+                <input type="number" id="bmi-height" class="form-input" placeholder="Ex: 180" min="100" max="250" step="1" required data-i18n-placeholder="bmi_placeholder_height">
+              </div>
+
+              <button type="button" id="bmi-calc-btn" class="btn btn--primary btn--full" data-i18n="bmi_btn_calculate">
+                Calculer mon IMC
+              </button>
+
+              <p id="bmi-err" class="bmi-err-msg" role="alert"></p>
+            </form>
+
+            <!-- Panneau de résultat & Jauge -->
+            <div class="bmi-result-panel" aria-live="polite">
+              <span class="section-kicker" style="margin-bottom: 4px;" data-i18n="bmi_result_title">Votre Indice de Masse Corporelle</span>
+              
+              <div class="bmi-value-display" id="bmi-val-display">--.-</div>
+              
+              <div class="bmi-category-badge" id="bmi-cat-badge" data-i18n="bmi_result_placeholder">
+                Entrez votre poids et votre taille puis cliquez sur Calculer.
+              </div>
+
+              <!-- Jauge en nuances d'orange -->
+              <div class="bmi-gauge-track" aria-hidden="true">
+                <div class="bmi-gauge-pointer" id="bmi-pointer"></div>
+              </div>
+
+              <div class="bmi-advice-box" id="bmi-advice-text">
+                Conseil READY FIT : Entrez vos mensurations pour recevoir une recommandation d'entraînement adaptée.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         8. SECTION COACHS
+         ======================================================================== -->
+    <section id="coaches" class="section section--alt">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker" data-i18n="coaches_kicker">L'ÉQUIPE TECHNIQUE</span>
+          <h2 class="section-title" data-i18n="coaches_title">RENCONTREZ VOS PRÉPARATEURS</h2>
+          <p class="section-subtitle" data-i18n="coaches_subtitle">
+            Des athlètes d'expérience et éducateurs sportifs certifiés, passionnés par la biomécanique et le dépassement personnel.
+          </p>
+        </div>
+
+        <div class="coaches-grid">
+          
+          <!-- Coach 1 : Marc Mandeng -->
+          <article class="coach-card reveal-on-scroll">
+            <div class="coach-avatar-wrap">
+              <svg class="coach-avatar-svg" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Avatar Coach Marc">
+                <circle cx="100" cy="80" r="42" fill="#2A2A2A" stroke="#FF6B00" stroke-width="2"/>
+                <path d="M100 95 C115 95 125 82 125 68 C125 54 114 42 100 42 C86 42 75 54 75 68 C75 82 85 95 100 95 Z" fill="#404040"/>
+                <path d="M40 210 C40 160 70 135 100 135 C130 135 160 160 160 210 Z" fill="#2A2A2A" stroke="#FF6B00" stroke-width="1.5"/>
+                <path d="M75 145 L100 165 L125 145" stroke="#FF6B00" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <div class="coach-info">
+              <h3 class="coach-name" data-i18n="coach_1_name">Marc Mandeng</h3>
+              <span class="coach-role" data-i18n="coach_1_role">Head Coach & Haltérophilie</span>
+              <p class="coach-bio" data-i18n="coach_1_bio">
+                Ancien athlète de compétition, 10 ans d'expertise en préparation de force et dynamométrie sportive.
+              </p>
+              <div class="coach-socials">
+                <a href="#contact" class="coach-social-link" aria-label="Instagram de Marc">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                  </svg>
+                </a>
+                <a href="#contact" class="coach-social-link" aria-label="LinkedIn de Marc">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                    <rect x="2" y="9" width="4" height="12"/>
+                    <circle cx="4" cy="4" r="2"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coach 2 : Sarah Bella -->
+          <article class="coach-card reveal-on-scroll">
+            <div class="coach-avatar-wrap">
+              <svg class="coach-avatar-svg" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Avatar Coach Sarah">
+                <circle cx="100" cy="80" r="42" fill="#2A2A2A" stroke="#FF6B00" stroke-width="2"/>
+                <path d="M100 95 C112 95 122 83 122 70 C122 57 112 44 100 44 C88 44 78 57 78 70 C78 83 88 95 100 95 Z" fill="#404040"/>
+                <path d="M48 210 C48 165 72 140 100 140 C128 140 152 165 152 210 Z" fill="#2A2A2A" stroke="#FF6B00" stroke-width="1.5"/>
+                <circle cx="100" cy="140" r="14" fill="#FF6B00" opacity="0.3"/>
+              </svg>
+            </div>
+            <div class="coach-info">
+              <h3 class="coach-name" data-i18n="coach_2_name">Sarah Bella</h3>
+              <span class="coach-role" data-i18n="coach_2_role">Spécialiste CrossFit & HIIT</span>
+              <p class="coach-bio" data-i18n="coach_2_bio">
+                Certifiée CrossFit Level 2, experte en conditionnement métabolique et reprogrammation posturale.
+              </p>
+              <div class="coach-socials">
+                <a href="#contact" class="coach-social-link" aria-label="Instagram de Sarah">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                  </svg>
+                </a>
+                <a href="#contact" class="coach-social-link" aria-label="LinkedIn de Sarah">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                    <rect x="2" y="9" width="4" height="12"/>
+                    <circle cx="4" cy="4" r="2"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coach 3 : Kévin Tagne -->
+          <article class="coach-card reveal-on-scroll">
+            <div class="coach-avatar-wrap">
+              <svg class="coach-avatar-svg" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Avatar Coach Kévin">
+                <circle cx="100" cy="80" r="42" fill="#2A2A2A" stroke="#FF6B00" stroke-width="2"/>
+                <path d="M100 95 C116 95 126 84 126 70 C126 56 115 44 100 44 C85 44 74 56 74 70 C74 84 84 95 100 95 Z" fill="#404040"/>
+                <path d="M42 210 C42 162 70 136 100 136 C130 136 158 162 158 210 Z" fill="#2A2A2A" stroke="#FF6B00" stroke-width="1.5"/>
+                <path d="M80 160 L100 176 L120 160" stroke="#FF8A2B" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <div class="coach-info">
+              <h3 class="coach-name" data-i18n="coach_3_name">Kévin Tagne</h3>
+              <span class="coach-role" data-i18n="coach_3_role">Champion de Boxe & Striking</span>
+              <p class="coach-bio" data-i18n="coach_3_bio">
+                Ceinture noire et sparring partner émérite, il transmet l'art noble avec pédagogie et intensité.
+              </p>
+              <div class="coach-socials">
+                <a href="#contact" class="coach-social-link" aria-label="Instagram de Kévin">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                  </svg>
+                </a>
+                <a href="#contact" class="coach-social-link" aria-label="YouTube de Kévin">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coach 4 : Audrey Ngono -->
+          <article class="coach-card reveal-on-scroll">
+            <div class="coach-avatar-wrap">
+              <svg class="coach-avatar-svg" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Avatar Coach Audrey">
+                <circle cx="100" cy="80" r="42" fill="#2A2A2A" stroke="#FF6B00" stroke-width="2"/>
+                <path d="M100 95 C113 95 123 83 123 69 C123 55 113 43 100 43 C87 43 77 55 77 69 C77 83 87 95 100 95 Z" fill="#404040"/>
+                <path d="M46 210 C46 166 72 142 100 142 C128 142 154 166 154 210 Z" fill="#2A2A2A" stroke="#FF6B00" stroke-width="1.5"/>
+                <path d="M84 150 C94 162 106 162 116 150" stroke="#FF6B00" stroke-width="1.5" fill="none"/>
+              </svg>
+            </div>
+            <div class="coach-info">
+              <h3 class="coach-name" data-i18n="coach_4_name">Audrey Ngono</h3>
+              <span class="coach-role" data-i18n="coach_4_role">Professeure de Yoga & Mobilité</span>
+              <p class="coach-bio" data-i18n="coach_4_bio">
+                Formée aux techniques de respiration et souplesse fonctionnelle pour une récupération musculaire profonde.
+              </p>
+              <div class="coach-socials">
+                <a href="#contact" class="coach-social-link" aria-label="Instagram d'Audrey">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                  </svg>
+                </a>
+                <a href="#contact" class="coach-social-link" aria-label="LinkedIn d'Audrey">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                    <rect x="2" y="9" width="4" height="12"/>
+                    <circle cx="4" cy="4" r="2"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         9. TÉMOIGNAGES (CARROUSEL JS VANILLA)
+         ======================================================================== -->
+    <section class="section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker" data-i18n="testimonials_kicker">RÉSULTATS PROUVÉS</span>
+          <h2 class="section-title" data-i18n="testimonials_title">ILS ONT CHOISI DE SE DÉPASSER</h2>
+          <p class="section-subtitle" data-i18n="testimonials_subtitle">
+            Découvrez les retours authentiques de ceux qui ont transformé leur silhouette, leur santé et leur confiance chez READY FIT.
+          </p>
+        </div>
+
+        <div class="testimonials-carousel-wrapper reveal-on-scroll">
+          <div class="carousel-viewport" aria-roledescription="carousel" aria-label="Avis des membres">
+            <div class="carousel-track">
+              
+              <!-- Avis 1 -->
+              <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="1 sur 3">
+                <svg class="quote-icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+                <blockquote class="testi-quote" data-i18n="testi_1_quote">
+                  « En 6 mois chez READY FIT, j'ai perdu 14 kg tout en augmentant ma force au squat de 40 kg. L'émulation entre membres et les conseils des coachs ont complètement changé mon hygiène de vie. »
+                </blockquote>
+                <div class="testi-meta">
+                  <div class="testi-avatar-circle">CE</div>
+                  <div>
+                    <div class="testi-name" data-i18n="testi_1_author">Christian Eboa</div>
+                    <div class="testi-role" data-i18n="testi_1_role">Membre Premium depuis 1 an</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Avis 2 -->
+              <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 sur 3">
+                <svg class="quote-icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+                <blockquote class="testi-quote" data-i18n="testi_2_quote">
+                  « Les cours de Boxe et de CrossFit sont d'une intensité rare. L'ambiance est survoltée, les installations sont toujours impeccables et le matériel Hammer Strength est ce qu'il y a de mieux. »
+                </blockquote>
+                <div class="testi-meta">
+                  <div class="testi-avatar-circle">VN</div>
+                  <div>
+                    <div class="testi-name" data-i18n="testi_2_author">Vanessa Ngo</div>
+                    <div class="testi-role" data-i18n="testi_2_role">Membre VIP Élite</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Avis 3 -->
+              <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="3 sur 3">
+                <svg class="quote-icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+                <blockquote class="testi-quote" data-i18n="testi_3_quote">
+                  « Le calculateur d'IMC et le bilan biomécanique initial m'ont permis d'avoir un programme ultra ciblé. Aujourd'hui, je me sens plus rapide, plus tonique et plus confiant que jamais. »
+                </blockquote>
+                <div class="testi-meta">
+                  <div class="testi-avatar-circle">PM</div>
+                  <div>
+                    <div class="testi-name" data-i18n="testi_3_author">Patrick Mvondo</div>
+                    <div class="testi-role" data-i18n="testi_3_role">Adhérent CrossFit</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Contrôles du carrousel -->
+          <div class="carousel-controls">
+            <button type="button" class="carousel-btn" id="testi-prev-btn" data-i18n-aria="testi_prev_aria" aria-label="Avis précédent">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"/>
+              </svg>
+            </button>
+
+            <div class="carousel-dots" id="testi-dots" role="tablist" aria-label="Navigation des avis">
+              <!-- Points générés par JS -->
+            </div>
+
+            <button type="button" class="carousel-btn" id="testi-next-btn" data-i18n-aria="testi_next_aria" aria-label="Avis suivant">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         10. SECTION CONTACT & LOCALISATION (686942622)
+         ======================================================================== -->
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker" data-i18n="contact_kicker">PASSEZ À L'ACTION</span>
+          <h2 class="section-title" data-i18n="contact_title">CONTACTEZ LE CLUB READY FIT</h2>
+          <p class="section-subtitle" data-i18n="contact_subtitle">
+            Une question sur nos formules, nos cours ou nos équipements ? Notre équipe vous répond sous 24h ou immédiatement par WhatsApp.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Colonne 1 : Formulaire de contact -->
+          <div class="contact-card-form reveal-on-scroll">
+            <h3 class="contact-form-title" data-i18n="contact_form_title">Envoyez-nous un message</h3>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              
+              <div class="form-row">
+                <!-- Nom -->
+                <div class="form-group" id="group-name">
+                  <label for="contact-name" class="form-label" data-i18n="contact_form_name_label">Nom complet</label>
+                  <input type="text" id="contact-name" class="form-input" placeholder="Ex: Yannick Noah" required data-i18n-placeholder="contact_form_name_placeholder">
+                  <div class="field-error" id="error-name" role="alert"></div>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group" id="group-email">
+                  <label for="contact-email" class="form-label" data-i18n="contact_form_email_label">Adresse e-mail</label>
+                  <input type="email" id="contact-email" class="form-input" placeholder="Ex: yannick@example.com" required data-i18n-placeholder="contact_form_email_placeholder">
+                  <div class="field-error" id="error-email" role="alert"></div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <!-- Téléphone -->
+                <div class="form-group" id="group-phone">
+                  <label for="contact-phone" class="form-label" data-i18n="contact_form_phone_label">Numéro de téléphone</label>
+                  <input type="tel" id="contact-phone" class="form-input" placeholder="Ex: 686 94 26 22" required data-i18n-placeholder="contact_form_phone_placeholder">
+                  <div class="field-error" id="error-phone" role="alert"></div>
+                </div>
+
+                <!-- Objectif -->
+                <div class="form-group" id="group-goal">
+                  <label for="contact-goal" class="form-label" data-i18n="contact_form_goal_label">Votre objectif principal</label>
+                  <select id="contact-goal" class="form-select" required>
+                    <option value="" data-i18n="contact_goal_opt_default">-- Sélectionnez votre priorité --</option>
+                    <option value="loss" data-i18n="contact_goal_opt_loss">Perte de poids & sèche</option>
+                    <option value="muscle" data-i18n="contact_goal_opt_muscle">Prise de masse musculaire & force</option>
+                    <option value="endurance" data-i18n="contact_goal_opt_endurance">Cardio, souffle & endurance</option>
+                    <option value="boxing" data-i18n="contact_goal_opt_boxe">Apprentissage Boxe & sports de combat</option>
+                    <option value="rehab" data-i18n="contact_goal_opt_rehab">Mobilité, souplesse & posture</option>
+                    <option value="vip_coaching" data-i18n="contact_goal_opt_vip">Coaching privé VIP haute performance</option>
+                  </select>
+                  <div class="field-error" id="error-goal" role="alert"></div>
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group" id="group-message">
+                <label for="contact-message" class="form-label" data-i18n="contact_form_msg_label">Votre message</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Décrivez vos attentes, vos créneaux souhaités ou posez vos questions..." rows="4" required data-i18n-placeholder="contact_form_msg_placeholder"></textarea>
+                <div class="field-error" id="error-message" role="alert"></div>
+              </div>
+
+              <button type="submit" id="contact-submit-btn" class="btn btn--primary btn--full" data-i18n="contact_form_submit">
+                Envoyer ma demande
+              </button>
+
+              <!-- Encadré de confirmation après soumission -->
+              <div id="contact-success" class="contact-success-box" role="status">
+                <h4 class="contact-success-title" data-i18n="val_success_title">Demande transmise avec succès !</h4>
+                <p class="contact-success-desc" data-i18n="val_success_desc">
+                  Merci. Notre responsable d'accueil vous recontactera très rapidement au 686942622 ou par message WhatsApp.
+                </p>
+                <a href="https://wa.me/237686942622" id="contact-wa-action" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--full" data-i18n="val_success_whatsapp_action">
+                  Ouvrir directement dans WhatsApp
+                </a>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Colonne 2 : Coordonnées, Horaires & Carte Stylisée -->
+          <div class="contact-info-col reveal-on-scroll">
+            
+            <div class="contact-info-box">
+              <h3 class="contact-info-title" data-i18n="contact_info_title">Informations & Accès</h3>
+              
+              <!-- Adresse -->
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="info-label" data-i18n="contact_address_label">Adresse de la salle :</div>
+                  <div class="info-value" data-i18n="contact_address_val">Boulevard de la Liberté, Akwa - Face Hôtel Prince de Galles, Douala</div>
+                </div>
+              </div>
+
+              <!-- Téléphone -->
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="info-label" data-i18n="contact_phone_label">Téléphone direct :</div>
+                  <div class="info-value">
+                    <a href="tel:+237686942622" data-i18n="contact_phone_val">(+237) 686 94 26 22</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2"/>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="info-label" data-i18n="contact_email_label">E-mail de contact :</div>
+                  <div class="info-value">
+                    <a href="mailto:contact@readyfit-club.com" data-i18n="contact_email_val">contact@readyfit-club.com</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Horaires -->
+              <div class="info-item" style="margin-bottom: 0;">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="info-label" data-i18n="contact_hours_title">Horaires d'ouverture :</div>
+                  <div class="info-value" style="font-size: 0.875rem; line-height: 1.6;">
+                    <div data-i18n="contact_hours_week">Lundi - Vendredi : 06h00 – 22h00</div>
+                    <div data-i18n="contact_hours_sat">Samedi : 07h00 – 21h00</div>
+                    <div data-i18n="contact_hours_sun">Dimanche & Jours fériés : 08h00 – 18h00</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Bloc Carte Stylisée Sombre -->
+            <div class="map-container" role="img" aria-label="Carte stylisée de la localisation du club READY FIT">
+              <svg class="map-svg-bg" viewBox="0 0 500 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Rues et axes routiers stylisés -->
+                <path d="M0 60 H500" stroke="#1E1E1E" stroke-width="14"/>
+                <path d="M0 160 H500" stroke="#1E1E1E" stroke-width="18"/>
+                <path d="M120 0 V240" stroke="#1E1E1E" stroke-width="12"/>
+                <path d="M360 0 V240" stroke="#1E1E1E" stroke-width="20"/>
+                <path d="M220 0 L260 240" stroke="#262626" stroke-width="8"/>
+                <!-- Tracés secondaires -->
+                <circle cx="360" cy="160" r="30" stroke="#2A2A2A" stroke-width="4"/>
+                <path d="M30 200 L470 40" stroke="#191919" stroke-width="4" stroke-dasharray="8 6"/>
+              </svg>
+
+              <!-- Repère pin lumineux -->
+              <div class="map-marker">
+                <div class="marker-pin">
+                  <div class="marker-inner-dot"></div>
+                </div>
+                <div class="marker-label">READY FIT DOUALA</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ========================================================================
+       11. BOUTON FLOTTANT WHATSAPP (686942622)
+       ======================================================================== -->
+  <a href="https://wa.me/237686942622" id="floating-whatsapp" target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" data-i18n-aria="whatsapp_tooltip" aria-label="Discuter sur WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.41a8.188 8.188 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.53c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.67-1.25-1.5-1.4-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.71 4.31 3.8 2.53 1.09 2.53.73 2.99.69.46-.04 1.47-.6 1.68-1.18.21-.59.21-1.09.15-1.19-.06-.1-.23-.17-.48-.29z"/>
+    </svg>
+    <span class="whatsapp-tooltip" data-i18n="whatsapp_tooltip">Discuter sur WhatsApp</span>
+  </a>
+
+
+  <!-- ========================================================================
+       12. FOOTER
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      
+      <div class="footer-top">
+        
+        <!-- Marque & Mission -->
+        <div class="footer-brand">
+          <a href="#home" class="logo" aria-label="READY FIT Accueil">
+            <span class="logo-ready">READY</span>
+            <span class="logo-fit">FIT</span>
+          </a>
+          <p class="footer-tagline" data-i18n="footer_tagline">
+            Le complexe d'entraînement athlétique de référence. Force, puissance et persévérance.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Rapide -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_col_nav">Navigation rapide</h4>
+          <ul class="footer-links">
+            <li><a href="#about" class="footer-link" data-i18n="nav_about">À propos</a></li>
+            <li><a href="#disciplines" class="footer-link" data-i18n="nav_disciplines">Disciplines</a></li>
+            <li><a href="#schedule" class="footer-link" data-i18n="nav_schedule">Planning</a></li>
+            <li><a href="#pricing" class="footer-link" data-i18n="nav_pricing">Tarifs</a></li>
+            <li><a href="#bmi" class="footer-link">Calculateur d'IMC</a></li>
+            <li><a href="#coaches" class="footer-link" data-i18n="nav_coaches">Coachs</a></li>
+            <li><a href="#contact" class="footer-link" data-i18n="nav_contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Horaires du centre -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_col_hours">Horaires du centre</h4>
+          <div class="footer-hours-list">
+            <p><strong style="color: var(--blanc);">Lun - Ven :</strong> 06:00 - 22:00</p>
+            <p><strong style="color: var(--blanc);">Samedi :</strong> 07:00 - 21:00</p>
+            <p><strong style="color: var(--blanc);">Dimanche :</strong> 08:00 - 18:00</p>
+            <p style="margin-top: 8px; color: var(--orange); font-weight: 600;">Accès VIP 24h/24 disponible</p>
+          </div>
+        </div>
+
+        <!-- Coordonnées directes -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="nav_contact">Contact</h4>
+          <div class="footer-hours-list">
+            <p>Akwa, Douala</p>
+            <p><a href="tel:+237686942622" style="color: var(--orange); font-weight: 700;">(+237) 686 94 26 22</a></p>
+            <p>contact@readyfit-club.com</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bas de page -->
+      <div class="footer-bottom">
+        <p data-i18n="footer_copy">© 2026 READY FIT. Tous droits réservés. Forge ta légende.</p>
+        <button type="button" id="back-to-top" class="back-to-top-btn" data-i18n-aria="footer_back_top" aria-label="Retour en haut de page">
+          <span data-i18n="footer_back_top">Haut de page</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts ES6+ Vanilla -->
+  <script type="module" src="/js/i18n.js"></script>
+  <script type="module" src="/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+---
+name: Obsidian Kinetic
+colors:
+  surface: '#131313'
+  surface-dim: '#131313'
+  surface-bright: '#393939'
+  surface-container-lowest: '#0e0e0e'
+  surface-container-low: '#1c1b1b'
+  surface-container: '#201f1f'
+  surface-container-high: '#2a2a2a'
+  surface-container-highest: '#353534'
+  on-surface: '#e5e2e1'
+  on-surface-variant: '#e2bfb0'
+  inverse-surface: '#e5e2e1'
+  inverse-on-surface: '#313030'
+  outline: '#a98a7d'
+  outline-variant: '#5a4136'
+  surface-tint: '#ffb693'
+  primary: '#ffb693'
+  on-primary: '#561f00'
+  primary-container: '#ff6b00'
+  on-primary-container: '#572000'
+  inverse-primary: '#a04100'
+  secondary: '#ffb787'
+  on-secondary: '#502400'
+  secondary-container: '#e0730f'
+  on-secondary-container: '#461f00'
+  tertiary: '#4ae176'
+  on-tertiary: '#003915'
+  tertiary-container: '#00b050'
+  on-tertiary-container: '#003a15'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#ffdbcc'
+  primary-fixed-dim: '#ffb693'
+  on-primary-fixed: '#351000'
+  on-primary-fixed-variant: '#7a3000'
+  secondary-fixed: '#ffdcc7'
+  secondary-fixed-dim: '#ffb787'
+  on-secondary-fixed: '#311300'
+  on-secondary-fixed-variant: '#723600'
+  tertiary-fixed: '#6bff8f'
+  tertiary-fixed-dim: '#4ae176'
+  on-tertiary-fixed: '#002109'
+  on-tertiary-fixed-variant: '#005321'
+  background: '#131313'
+  on-background: '#e5e2e1'
+  surface-variant: '#353534'
+typography:
+  display:
+    fontFamily: Bebas Neue
+    fontSize: 96px
+    fontWeight: '400'
+    lineHeight: 96px
+    letterSpacing: 0.04em
+  display-mobile:
+    fontFamily: Bebas Neue
+    fontSize: 56px
+    fontWeight: '400'
+    lineHeight: 56px
+    letterSpacing: 0.03em
+  headline-xl:
+    fontFamily: Bebas Neue
+    fontSize: 64px
+    fontWeight: '400'
+    lineHeight: 64px
+    letterSpacing: 0.03em
+  headline-xl-mobile:
+    fontFamily: Bebas Neue
+    fontSize: 40px
+    fontWeight: '400'
+    lineHeight: 44px
+    letterSpacing: 0.02em
+  headline-lg:
+    fontFamily: Bebas Neue
+    fontSize: 44px
+    fontWeight: '400'
+    lineHeight: 48px
+    letterSpacing: 0.02em
+  headline-lg-mobile:
+    fontFamily: Bebas Neue
+    fontSize: 32px
+    fontWeight: '400'
+    lineHeight: 36px
+    letterSpacing: 0.02em
+  headline-md:
+    fontFamily: Bebas Neue
+    fontSize: 32px
+    fontWeight: '400'
+    lineHeight: 36px
+    letterSpacing: 0.02em
+  headline-sm:
+    fontFamily: Bebas Neue
+    fontSize: 24px
+    fontWeight: '400'
+    lineHeight: 28px
+    letterSpacing: 0.02em
+  title-lg:
+    fontFamily: Inter
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: -0.01em
+  title-md:
+    fontFamily: Inter
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 24px
+    letterSpacing: -0.01em
+  body-lg:
+    fontFamily: Inter
+    fontSize: 18px
+    fontWeight: '400'
+    lineHeight: 28px
+  body-md:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-sm:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  label-lg:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '700'
+    lineHeight: 18px
+    letterSpacing: 0.06em
+  label-md:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.08em
+  label-sm:
+    fontFamily: Inter
+    fontSize: 10px
+    fontWeight: '700'
+    lineHeight: 12px
+    letterSpacing: 0.1em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  gutter-mobile: 1rem
+  margin: 3rem
+  margin-mobile: 1.25rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+  space-2xl: 4rem
+  space-3xl: 6rem
+---
+
+## Brand & Style
+
+This design system targets an elite tier of athletes, high-performance training enthusiasts, and boutique fitness members. The aesthetic conveys relentless power, engineered precision, and moody luxury. It discards playful, gamified fitness motifs in favor of an imposing, architectural discipline reminiscent of high-end automotive design and private performance labs.
+
+The visual direction merges **Minimalism** with **Dark Athletic Brutalism and Tactile Ambient Glows**:
+- Pitch-black obsidian surfaces eliminate visual noise, letting dramatic training imagery and dynamic metrics dominate.
+- Pure mechanical precision is maintained via fine 1px structural framing, high-contrast condensed headlines, and disciplined micro-typography.
+- Kinetic energy is channeled exclusively through electric orange embers—restrained, intentional, and high-impact.
+
+## Colors
+
+The palette is engineered for a dark-room performance lab experience. Black is not treated as empty space; it is a material foundation stratified across controlled surface layers:
+
+- **Canvas Deep (`#0A0A0A`):** The absolute background plane. Absorbs light and provides infinite contrast for photography and typography.
+- **Card & Surface Base (`#141414`):** Container backgrounds, card surfaces, and alternating full-bleed grid sections.
+- **Structural Lines (`#1E1E1E`):** Micro-borders, dividers, and card outlines. Renders interfaces tactile without harsh white delineation.
+- **Primary Energy (`#FF6B00`):** Electric athletic orange. Reserved exclusively for core call-to-actions, active telemetry metrics, key milestone numbers, and focused states.
+- **Kinetic Accent (`#FF8A2B`):** Interactive hover states, linear gradient terminals, and directional edge lighting.
+- **Typography & Hierarchy:**
+  - Headings / Maximum Emphasis: `#FFFFFF`
+  - Body Copy & Functional UI: `#B8B8B8`
+  - Muted Captions, Inactive States, Metas: `#757575`
+- **Feedback Semantics:** Success: `#22C55E`, Destructive / Error: `#EF4444`.
+
+## Typography
+
+Typography establishes an assertive, athletic cadence across every viewport:
+
+- **Display & Headings (`Bebas Neue`):** Condensed, geometric, and authoritative. All headings are strictly rendered in `uppercase` with tracking ranging from `0.02em` to `0.04em`. They project impact, momentum, and competitive stature.
+- **Body & Editorial (`Inter`):** Clean, neutral, high-legibility sans-serif. Balanced at a 16px baseline (`body-md`) to ensure zero eye strain when reading performance metrics, class schedules, or athletic curriculum.
+- **Labels & Overlines (`Inter`):** Styled in `uppercase`, semibold or bold weight, with wide tracking (`0.06em` to `0.1em`). Used for categorizing workout regimes, program tags, and telemetry data keys.
+
+## Layout & Spacing
+
+The layout is built upon a rigid 12-column responsive fluid grid designed around architectural symmetry and deliberate spatial tension.
+
+- **Desktop (1200px+):** 12 columns with 24px (`1.5rem`) gutters and a minimum 48px (`3rem`) outer margin. Maximum layout bound is 1440px to preserve visual tension.
+- **Tablet (768px - 1199px):** 8 columns with 24px gutters and 32px outer canvas margins. Multi-column cards collapse to 2-up grids.
+- **Mobile (320px - 767px):** 4 columns with 16px (`1rem`) gutters and 20px (`1.25rem`) margins. Content shifts into single-column vertical stacks with linear metrics.
+- **Section Stacking:** Full-width sections alternate between `#0A0A0A` and `#141414` separated by structural 1px `#1E1E1E` borders, spaced with `space-2xl` and `space-3xl` vertical block paddings to create monumental breathing room.
+
+## Elevation & Depth
+
+Visual depth is achieved through structural layering and atmospheric backlighting rather than traditional dropshadows:
+
+- **Flat Precision:** Surfaces lie on sharp, grounded planes. Base elements rely on 1px solid borders (`#1E1E1E`) to delineate boundary lines against `#0A0A0A`.
+- **Atmospheric Rim Lighting:** Active cards, floating action panels, and key interaction items receive an ambient orange rim glow using `box-shadow: 0 0 24px -4px rgba(255, 107, 0, 0.25)`.
+- **Surface Elevation Tiers:**
+  - **Ground Plane:** `#0A0A0A`
+  - **Tier 1 (Cards, Modules, Sidebars):** `#141414` with a 1px solid `#1E1E1E` stroke.
+  - **Tier 2 (Modals, Overlays, Floating Nav):** `#181818` with 1px solid `#2A2A2A` and `backdrop-filter: blur(12px)`.
+- **Cinematic Photography Gradients:** Visual assets feature vertical and diagonal linear masks fading to `#0A0A0A` at edges (`linear-gradient(180deg, rgba(10,10,10,0) 0%, #0A0A0A 100%)`), weaving imagery directly into the structural scaffolding.
+
+## Shapes
+
+The design system maintains a modern, sculpted contour that balances high-tech engineering with physical ergonomics:
+
+- **Base Radius (8px / `0.5rem`):** Applied to standard interactive units—input fields, buttons, status badges, and mini stat blocks.
+- **Container Radius (16px / `1rem`):** Applied to content cards, showcase panels, image frames, and modular widgets.
+- **Geometric Strictness:** Rounded corners are deliberately restrained. Fully circular pill shapes are avoided for primary actions to preserve athletic tension, reserved solely for micro-indicators or circular iconography.
+
+## Components
+
+### Buttons & Interactive Triggers
+- **Primary Action:** Solid `#FF6B00` fill, text in `#FFFFFF` with `label-lg` uppercase styling. Height: 48px or 56px. Transition to `#FF8A2B` on hover with a `0 0 20px rgba(255, 107, 0, 0.35)` glow. Active state: slight downward scale (`0.98`).
+- **Secondary / Ghost:** Transparent background with 1px solid `#1E1E1E` border, text in `#FFFFFF`. On hover, border transitions to `#FF6B00` and background shifts to `rgba(255, 107, 0, 0.05)`.
+- **Text Link:** `#B8B8B8` with an orange arrow indicator (`→`). Transitions to `#FF6B00` with arrow translating 4px rightward on hover.
+
+### Showcase & Metric Cards
+- Background: `#141414`. Border: 1px solid `#1E1E1E`. Corner radius: 16px (`1rem`).
+- Internal padding: `space-lg` (24px) to `space-xl` (40px).
+- Hover state: Border shifts to `rgba(255, 107, 0, 0.5)` with an ambient orange underglow (`rgba(255, 107, 0, 0.15)`).
+
+### Input Fields & Controls
+- **Fields:** Height 48px, background `#0E0E0E`, border 1px solid `#1E1E1E`, text `#FFFFFF`, placeholder `#757575`. Focus state triggers border `#FF6B00` and `0 0 0 1px #FF6B00`.
+- **Checkboxes & Radios:** 20px custom square/circular forms with 1px solid `#1E1E1E` border. Active checked state fills `#FF6B00` with a crisp white checkmark or center pin.
+
+### Chips & Status Badges
+- Height 28px, padding 4px 12px, border-radius 6px.
+- Background `rgba(255, 255, 255, 0.04)`, border 1px solid `#1E1E1E`, typography `label-sm`.
+- Accent Variant: Background `rgba(255, 107, 0, 0.12)`, border 1px solid `rgba(255, 107, 0, 0.4)`, text `#FF8A2B`.
+
+### Telemetry & Program Modules
+- **Class/Roster List Rows:** Alternating row highlights or 1px bottom divider `#1E1E1E`. Left-aligned program title (`headline-sm`), right-aligned schedule tag with active instructor avatars framed by 1px orange rims.
+- **Metric Highlight Tiles:** Massive numbers rendered in `headline-xl` (`#FFFFFF`), with an orange unit suffix (`#FF6B00`), anchored by a muted uppercase label (`label-md` in `#757575`).

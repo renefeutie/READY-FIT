@@ -1,0 +1,6 @@
+{
+  "name": "READY FIT - Gym & Performance Studio",
+  "description": "Site vitrine bilingue (FR/EN) officiel de la salle de sport READY FIT : cours, planning dynamique, tarifs en FCFA, calculateur d'IMC et coaching.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
