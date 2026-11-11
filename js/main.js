@@ -179,6 +179,11 @@ function setupHeaderAndNav() {
     mobileNav?.classList.toggle('open', isOpen);
     burgerBtn?.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     document.body.style.overflow = isOpen ? 'hidden' : '';
+
+    if (isOpen) {
+      const scrollableArea = document.getElementById('mobile-nav-scrollable');
+      if (scrollableArea) scrollableArea.scrollTop = 0;
+    }
   }
 
   function closeMobileMenu() {
@@ -197,7 +202,7 @@ function setupHeaderAndNav() {
     closeMobileMenu();
   });
 
-  // Encoche de retour fonctionnelle pour sortir du menu mobile
+  // Encoche supérieure tactile et fonctionnelle pour sortir du menu mobile
   const mobileNotchCloseBtn = document.getElementById('mobile-notch-close');
   const mobileNotchBottomBtn = document.getElementById('mobile-notch-bottom-close');
 
@@ -211,16 +216,15 @@ function setupHeaderAndNav() {
     closeMobileMenu();
   });
 
-  // Geste tactile de glissement (swipe) pour sortir du menu
-  let menuTouchStartY = 0;
-  mobileNav?.addEventListener('touchstart', (e) => {
-    menuTouchStartY = e.touches[0].clientY;
+  // Glissement tactile fluide UNIQUEMENT sur l'encoche pour fermer si tirée (sans gêner le défilement des options)
+  let notchTouchStartY = 0;
+  mobileNotchCloseBtn?.addEventListener('touchstart', (e) => {
+    notchTouchStartY = e.touches[0].clientY;
   }, { passive: true });
 
-  mobileNav?.addEventListener('touchend', (e) => {
-    const touchEndY = e.changedTouches[0].clientY;
-    const diffY = touchEndY - menuTouchStartY;
-    if (Math.abs(diffY) > 60) {
+  mobileNotchCloseBtn?.addEventListener('touchend', (e) => {
+    const diffY = e.changedTouches[0].clientY - notchTouchStartY;
+    if (Math.abs(diffY) > 30) {
       closeMobileMenu();
     }
   }, { passive: true });

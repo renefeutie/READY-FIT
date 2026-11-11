@@ -71,38 +71,45 @@
     </div>
   </header>
 
-  <!-- Menu Mobile Overlay avec encoche de retour et bouton croix « X » pour sortir du menu -->
+  <!-- Menu Mobile Overlay avec barre de défilement ergonomique, encoche et croix « X » -->
   <div class="mobile-nav-overlay" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Menu de navigation mobile">
-    <!-- Bouton croix « X » tactile et fonctionnelle pour sortir du menu -->
-    <button type="button" class="mobile-close-x-btn" id="mobile-close-x" data-i18n-aria="menu_close" data-i18n-title="menu_close" aria-label="Fermer le menu" title="Fermer le menu">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <line x1="18" y1="6" x2="6" y2="18"></line>
-        <line x1="6" y1="6" x2="18" y2="18"></line>
-      </svg>
-      <span class="sr-only" data-i18n="menu_close">Fermer le menu</span>
-    </button>
+    <!-- Header fixe du menu mobile : Croix « X » et encoche supérieure -->
+    <div class="mobile-nav-header">
+      <!-- Encoche supérieure tactile et fonctionnelle pour sortir du menu -->
+      <button type="button" class="mobile-notch-btn" id="mobile-notch-close" data-i18n-aria="menu_notch_close" data-i18n-title="menu_notch_close" aria-label="Sortir du menu" title="Sortir du menu">
+        <span class="mobile-notch-bar" aria-hidden="true"></span>
+        <span class="sr-only" data-i18n="menu_notch_close">Sortir du menu</span>
+      </button>
 
-    <!-- Encoche supérieure tactile et fonctionnelle pour sortir du menu -->
-    <button type="button" class="mobile-notch-btn" id="mobile-notch-close" data-i18n-aria="menu_notch_close" data-i18n-title="menu_notch_close" aria-label="Sortir du menu" title="Sortir du menu">
-      <span class="mobile-notch-bar" aria-hidden="true"></span>
-      <span class="sr-only" data-i18n="menu_notch_close">Sortir du menu</span>
-    </button>
+      <!-- Bouton croix « X » tactile et fonctionnelle pour sortir du menu -->
+      <button type="button" class="mobile-close-x-btn" id="mobile-close-x" data-i18n-aria="menu_close" data-i18n-title="menu_close" aria-label="Fermer le menu" title="Fermer le menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+        <span class="sr-only" data-i18n="menu_close">Fermer le menu</span>
+      </button>
+    </div>
 
-    <!-- Liste des liens du menu (reproduit fidèlement d'après la maquette) -->
-    <nav class="mobile-nav-links" aria-label="Navigation mobile">
-      <a href="#about" class="nav-link" data-i18n="nav_about">À propos</a>
-      <a href="#disciplines" class="nav-link" data-i18n="nav_disciplines">Disciplines</a>
-      <a href="#schedule" class="nav-link" data-i18n="nav_schedule">Planning</a>
-      <a href="#pricing" class="nav-link" data-i18n="nav_pricing">Tarifs</a>
-      <a href="#bmi" class="nav-link" data-i18n="nav_bmi">Calculateur IMC</a>
-      <a href="#coaches" class="nav-link" data-i18n="nav_coaches">Coachs</a>
-      <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
-    </nav>
+    <!-- Conteneur avec barre de défilement fluide et sans bug pour accéder à toutes les options -->
+    <div class="mobile-nav-scrollable" id="mobile-nav-scrollable">
+      <nav class="mobile-nav-links" aria-label="Navigation mobile">
+        <a href="#about" class="nav-link" data-i18n="nav_about">À propos</a>
+        <a href="#disciplines" class="nav-link" data-i18n="nav_disciplines">Disciplines</a>
+        <a href="#schedule" class="nav-link" data-i18n="nav_schedule">Planning</a>
+        <a href="#pricing" class="nav-link" data-i18n="nav_pricing">Tarifs</a>
+        <a href="#bmi" class="nav-link" data-i18n="nav_bmi">Calculateur IMC</a>
+        <a href="#coaches" class="nav-link" data-i18n="nav_coaches">Coachs</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+      </nav>
+    </div>
 
-    <!-- Encoche inférieure décorative et interactive de retour -->
-    <button type="button" class="mobile-notch-bottom-btn" id="mobile-notch-bottom-close" data-i18n-aria="menu_notch_close" aria-label="Sortir du menu" title="Sortir du menu">
-      <span class="mobile-notch-bottom-bar" aria-hidden="true"></span>
-    </button>
+    <!-- Footer fixe du menu mobile : Encoche inférieure décorative et interactive de retour -->
+    <div class="mobile-nav-footer">
+      <button type="button" class="mobile-notch-bottom-btn" id="mobile-notch-bottom-close" data-i18n-aria="menu_notch_close" aria-label="Sortir du menu" title="Sortir du menu">
+        <span class="mobile-notch-bottom-bar" aria-hidden="true"></span>
+      </button>
+    </div>
   </div>
 
   <main id="main-content">

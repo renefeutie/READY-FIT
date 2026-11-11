@@ -439,11 +439,15 @@ ul, ol {
   transform: translateY(-9px) rotate(-45deg);
 }
 
-/* Menu mobile overlay (reproduit fidèlement d'après la maquette avec encoche de retour) */
+/* Menu mobile overlay (Obsidian Kinetic avec défilement ergonomique et fluide) */
 .mobile-nav-overlay {
   display: flex;
   position: fixed;
   inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  max-height: 100dvh;
   background-color: #0A0A0A;
   z-index: 1050;
   flex-direction: column;
@@ -452,9 +456,10 @@ ul, ol {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translateY(-10px);
+  transform: translateY(-8px);
   transition: opacity var(--transition-normal), visibility var(--transition-normal), transform var(--transition-normal);
-  padding: max(24px, env(safe-area-inset-top)) 24px max(24px, env(safe-area-inset-bottom)) 24px;
+  padding: 0;
+  overflow: hidden;
 }
 
 .mobile-nav-overlay.open {
@@ -464,22 +469,36 @@ ul, ol {
   transform: translateY(0);
 }
 
+/* Header fixe du menu mobile */
+.mobile-nav-header {
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: max(16px, env(safe-area-inset-top));
+  padding-bottom: 6px;
+  background: linear-gradient(180deg, #0A0A0A 0%, rgba(10, 10, 10, 0.95) 75%, transparent 100%);
+  z-index: 15;
+}
+
 /* Bouton croix « X » pour sortir du menu mobile */
 .mobile-close-x-btn {
   position: absolute;
-  top: max(20px, env(safe-area-inset-top));
-  right: 20px;
+  top: max(14px, env(safe-area-inset-top));
+  right: 18px;
   width: 44px;
   height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(26, 26, 26, 0.8);
+  background-color: rgba(26, 26, 26, 0.85);
   border: 1px solid var(--noir-3);
   border-radius: 50%;
   color: var(--blanc);
   cursor: pointer;
-  z-index: 10;
+  z-index: 20;
   transition: all var(--transition-fast);
   touch-action: manipulation;
   backdrop-filter: blur(8px);
@@ -503,14 +522,14 @@ ul, ol {
 .mobile-notch-btn {
   width: 100%;
   max-width: 160px;
-  height: 48px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   background: transparent;
   border: none;
-  padding: 12px 0;
+  padding: 8px 0;
   transition: transform var(--transition-fast);
   user-select: none;
   touch-action: manipulation;
@@ -536,15 +555,61 @@ ul, ol {
   transform: scale(0.95);
 }
 
+/* Zone de défilement ergonomique et fluide avec barre de défilement visible et sans bug */
+.mobile-nav-scrollable {
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 28px 20px 28px;
+
+  /* Barre de défilement standard CSS (Firefox et navigateurs récents) */
+  scrollbar-width: thin;
+  scrollbar-color: var(--orange) rgba(255, 255, 255, 0.08);
+}
+
+/* Barre de défilement WebKit (iOS Safari, Android Chrome, Edge) */
+.mobile-nav-scrollable::-webkit-scrollbar {
+  width: 6px;
+  display: block;
+}
+
+.mobile-nav-scrollable::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-full);
+  margin: 8px 0;
+}
+
+.mobile-nav-scrollable::-webkit-scrollbar-thumb {
+  background-color: var(--orange);
+  border-radius: var(--radius-full);
+  box-shadow: 0 0 10px rgba(255, 107, 0, 0.5);
+  transition: background-color var(--transition-fast);
+}
+
+.mobile-nav-scrollable::-webkit-scrollbar-thumb:hover,
+.mobile-nav-scrollable::-webkit-scrollbar-thumb:active {
+  background-color: var(--orange-clair);
+  box-shadow: 0 0 16px rgba(255, 107, 0, 0.85);
+}
+
 /* Liens du menu mobile (typographie Bebas Neue, centré, grand format athlétique) */
 .mobile-nav-links {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: clamp(20px, 4vh, 34px);
+  gap: clamp(16px, 3.8vh, 32px);
   width: 100%;
-  margin: auto 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 14px 0;
 }
 
 .mobile-nav-links .nav-link {
@@ -555,9 +620,10 @@ ul, ol {
   text-align: center;
   text-transform: uppercase;
   transition: color var(--transition-fast), transform var(--transition-fast);
-  padding: 4px 16px;
-  line-height: 1.1;
+  padding: 6px 16px;
+  line-height: 1.15;
   text-decoration: none;
+  touch-action: manipulation;
 }
 
 .mobile-nav-links .nav-link:hover,
@@ -566,7 +632,20 @@ ul, ol {
   transform: scale(1.05);
 }
 
-/* Encoche inférieure comme dans la maquette */
+/* Footer fixe du menu mobile */
+.mobile-nav-footer {
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6px;
+  padding-bottom: max(16px, env(safe-area-inset-bottom));
+  background: linear-gradient(0deg, #0A0A0A 0%, rgba(10, 10, 10, 0.95) 75%, transparent 100%);
+  z-index: 15;
+}
+
 .mobile-notch-bottom-btn {
   width: 100%;
   max-width: 240px;
