@@ -190,6 +190,41 @@ function setupHeaderAndNav() {
 
   burgerBtn?.addEventListener('click', toggleMobileMenu);
 
+  // Bouton croix « X » fonctionnelle pour sortir du menu mobile
+  const mobileCloseXBtn = document.getElementById('mobile-close-x');
+  mobileCloseXBtn?.addEventListener('click', (e) => {
+    e.preventDefault();
+    closeMobileMenu();
+  });
+
+  // Encoche de retour fonctionnelle pour sortir du menu mobile
+  const mobileNotchCloseBtn = document.getElementById('mobile-notch-close');
+  const mobileNotchBottomBtn = document.getElementById('mobile-notch-bottom-close');
+
+  mobileNotchCloseBtn?.addEventListener('click', (e) => {
+    e.preventDefault();
+    closeMobileMenu();
+  });
+
+  mobileNotchBottomBtn?.addEventListener('click', (e) => {
+    e.preventDefault();
+    closeMobileMenu();
+  });
+
+  // Geste tactile de glissement (swipe) pour sortir du menu
+  let menuTouchStartY = 0;
+  mobileNav?.addEventListener('touchstart', (e) => {
+    menuTouchStartY = e.touches[0].clientY;
+  }, { passive: true });
+
+  mobileNav?.addEventListener('touchend', (e) => {
+    const touchEndY = e.changedTouches[0].clientY;
+    const diffY = touchEndY - menuTouchStartY;
+    if (Math.abs(diffY) > 60) {
+      closeMobileMenu();
+    }
+  }, { passive: true });
+
   // Fermeture au clic sur un lien de navigation
   navLinks.forEach((link) => {
     link.addEventListener('click', () => {

@@ -439,41 +439,169 @@ ul, ol {
   transform: translateY(-9px) rotate(-45deg);
 }
 
-/* Menu mobile overlay */
+/* Menu mobile overlay (reproduit fidèlement d'après la maquette avec encoche de retour) */
 .mobile-nav-overlay {
-  display: none;
+  display: flex;
   position: fixed;
   inset: 0;
-  background-color: rgba(10, 10, 10, 0.98);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background-color: #0A0A0A;
   z-index: 1050;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 24px;
+  justify-content: space-between;
   opacity: 0;
   visibility: hidden;
-  transition: opacity var(--transition-normal), visibility var(--transition-normal);
-  padding: 40px 24px;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity var(--transition-normal), visibility var(--transition-normal), transform var(--transition-normal);
+  padding: max(24px, env(safe-area-inset-top)) 24px max(24px, env(safe-area-inset-bottom)) 24px;
 }
 
 .mobile-nav-overlay.open {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
-.mobile-nav-overlay .nav-link {
-  font-family: var(--font-display);
-  font-size: 2.25rem;
-  letter-spacing: 0.05em;
-  color: var(--gris-texte);
-  text-align: center;
+/* Bouton croix « X » pour sortir du menu mobile */
+.mobile-close-x-btn {
+  position: absolute;
+  top: max(20px, env(safe-area-inset-top));
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(26, 26, 26, 0.8);
+  border: 1px solid var(--noir-3);
+  border-radius: 50%;
+  color: var(--blanc);
+  cursor: pointer;
+  z-index: 10;
+  transition: all var(--transition-fast);
+  touch-action: manipulation;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
-.mobile-nav-overlay .nav-link:hover,
-.mobile-nav-overlay .nav-link.active {
+.mobile-close-x-btn:hover,
+.mobile-close-x-btn:focus-visible {
   color: var(--orange);
+  border-color: var(--orange);
+  background-color: #222222;
+  transform: scale(1.08) rotate(90deg);
+  box-shadow: 0 0 16px rgba(255, 107, 0, 0.45);
+}
+
+.mobile-close-x-btn:active {
+  transform: scale(0.94);
+}
+
+/* Encoche supérieure tactile et fonctionnelle pour sortir du menu */
+.mobile-notch-btn {
+  width: 100%;
+  max-width: 160px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 12px 0;
+  transition: transform var(--transition-fast);
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.mobile-notch-bar {
+  width: 58px;
+  height: 4px;
+  background-color: var(--orange);
+  border-radius: var(--radius-full);
+  box-shadow: 0 0 12px rgba(255, 107, 0, 0.5);
+  transition: all var(--transition-normal);
+}
+
+.mobile-notch-btn:hover .mobile-notch-bar,
+.mobile-notch-btn:focus-visible .mobile-notch-bar {
+  background-color: var(--orange-clair);
+  transform: scaleY(1.3) scaleX(1.15);
+  box-shadow: 0 0 20px rgba(255, 107, 0, 0.9);
+}
+
+.mobile-notch-btn:active {
+  transform: scale(0.95);
+}
+
+/* Liens du menu mobile (typographie Bebas Neue, centré, grand format athlétique) */
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(20px, 4vh, 34px);
+  width: 100%;
+  margin: auto 0;
+}
+
+.mobile-nav-links .nav-link {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5.5vw, 2.75rem);
+  letter-spacing: 0.04em;
+  color: #B8B8B8;
+  text-align: center;
+  text-transform: uppercase;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+  padding: 4px 16px;
+  line-height: 1.1;
+  text-decoration: none;
+}
+
+.mobile-nav-links .nav-link:hover,
+.mobile-nav-links .nav-link.active {
+  color: var(--blanc);
+  transform: scale(1.05);
+}
+
+/* Encoche inférieure comme dans la maquette */
+.mobile-notch-bottom-btn {
+  width: 100%;
+  max-width: 240px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 8px 0;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.mobile-notch-bottom-bar {
+  width: 170px;
+  height: 3px;
+  background-color: var(--orange);
+  border-radius: var(--radius-full);
+  box-shadow: 0 0 16px rgba(255, 107, 0, 0.65);
+  opacity: 0.85;
+  transition: all var(--transition-normal);
+}
+
+.mobile-notch-bottom-btn:hover .mobile-notch-bottom-bar,
+.mobile-notch-bottom-btn:focus-visible .mobile-notch-bottom-bar {
+  opacity: 1;
+  transform: scaleX(1.08);
+  box-shadow: 0 0 24px rgba(255, 107, 0, 0.95);
+  background-color: var(--orange-clair);
+}
+
+.mobile-notch-bottom-btn:active {
+  transform: scale(0.96);
 }
 
 /* ==========================================================================

@@ -18,10 +18,13 @@ export const translations = {
     nav_disciplines: "Disciplines",
     nav_schedule: "Planning",
     nav_pricing: "Tarifs",
+    nav_bmi: "Calculateur IMC",
     nav_coaches: "Coachs",
     nav_contact: "Contact",
     nav_join: "Rejoindre",
     nav_lang_label: "Sélecteur de langue",
+    menu_notch_close: "Sortir du menu",
+    menu_close: "Fermer le menu",
 
     // Hero
     hero_kicker: "CENTRE DE HAUTE PERFORMANCE & CONDITIONNEMENT",
@@ -256,10 +259,13 @@ export const translations = {
     nav_disciplines: "Disciplines",
     nav_schedule: "Schedule",
     nav_pricing: "Pricing",
+    nav_bmi: "BMI Calculator",
     nav_coaches: "Coaches",
     nav_contact: "Contact",
     nav_join: "Join Now",
     nav_lang_label: "Language switch",
+    menu_notch_close: "Exit menu",
+    menu_close: "Close menu",
 
     // Hero
     hero_kicker: "HIGH-PERFORMANCE ATHLETIC CONDITIONING LAB",
