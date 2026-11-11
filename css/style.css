@@ -52,6 +52,27 @@
   --max-width: 1320px;
 }
 
+/* ==========================================================================
+   THEME CLAIR (LIGHT MODE ATHLÉTIQUE & PRÉCIS)
+   ========================================================================== */
+:root[data-theme="light"] {
+  --noir: #F4F4F6;
+  --noir-2: #FFFFFF;
+  --noir-3: #E1E1E6;
+  --orange: #FF6B00;
+  --orange-clair: #FF8A2B;
+  --blanc: #0F0F12;
+  --gris-texte: #484852;
+  --gris-muted: #767682;
+  --gris-surface: #EAEAEF;
+
+  --glow-orange-subtle: 0 0 24px -4px rgba(255, 107, 0, 0.2);
+  --glow-orange-intense: 0 0 32px 0 rgba(255, 107, 0, 0.35);
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.07);
+  --border-subtle: 1px solid var(--noir-3);
+  --border-orange: 1px solid rgba(255, 107, 0, 0.6);
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -364,11 +385,93 @@ ul, ol {
   width: 100%;
 }
 
-/* Actions Header (Langue + Bouton) */
+/* Actions Header (Theme + Langue + Bouton) */
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
+}
+
+/* Bouton switcher Mode Clair / Mode Sombre (Desktop & Entrée) */
+.theme-toggle-btn {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  background-color: var(--noir-2);
+  border: var(--border-subtle);
+  color: var(--blanc);
+  cursor: pointer;
+  position: relative;
+  transition: all var(--transition-fast);
+  touch-action: manipulation;
+  flex-shrink: 0;
+}
+
+.theme-toggle-btn:hover,
+.theme-toggle-btn:focus-visible {
+  border-color: var(--orange);
+  color: var(--orange);
+  transform: translateY(-2px);
+  box-shadow: 0 0 14px rgba(255, 107, 0, 0.4);
+}
+
+.theme-toggle-btn:active {
+  transform: translateY(0) scale(0.95);
+}
+
+/* Bouton switcher thème (Mobile Overlay) */
+.mobile-theme-btn {
+  position: absolute;
+  top: max(14px, env(safe-area-inset-top));
+  left: 18px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(26, 26, 26, 0.85);
+  border: 1px solid var(--noir-3);
+  border-radius: 50%;
+  color: var(--blanc);
+  cursor: pointer;
+  z-index: 20;
+  transition: all var(--transition-fast);
+  touch-action: manipulation;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.mobile-theme-btn:hover,
+.mobile-theme-btn:focus-visible {
+  color: var(--orange);
+  border-color: var(--orange);
+  background-color: #222222;
+  transform: scale(1.08);
+  box-shadow: 0 0 16px rgba(255, 107, 0, 0.45);
+}
+
+.mobile-theme-btn:active {
+  transform: scale(0.94);
+}
+
+/* Alternance automatique des icônes Soleil / Lune */
+:root:not([data-theme="light"]) .theme-icon-moon {
+  display: none !important;
+}
+:root:not([data-theme="light"]) .theme-icon-sun {
+  display: block !important;
+  color: var(--orange);
+}
+
+:root[data-theme="light"] .theme-icon-sun {
+  display: none !important;
+}
+:root[data-theme="light"] .theme-icon-moon {
+  display: block !important;
+  color: #0F0F12;
 }
 
 /* Sélecteur de langue */
@@ -2450,6 +2553,21 @@ ul, ol {
     width: 100%;
   }
 
+  .header-actions {
+    gap: 8px;
+  }
+
+  .theme-toggle-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .burger-btn {
+    width: 38px;
+    height: 38px;
+    padding: 10px 8px;
+  }
+
   .billing-toggle-wrap {
     flex-direction: column;
     gap: 12px;
@@ -2491,4 +2609,106 @@ ul, ol {
   .marker-pin {
     animation: none !important;
   }
+}
+
+/* ==========================================================================
+   19. AJUSTEMENTS SPÉCIFIQUES MODE CLAIR (LIGHT THEME)
+   ========================================================================== */
+:root[data-theme="light"] .site-header {
+  background-color: rgba(244, 244, 246, 0.75);
+}
+
+:root[data-theme="light"] .site-header.scrolled {
+  background-color: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+:root[data-theme="light"] .hero-section {
+  background: radial-gradient(circle at 50% 25%, rgba(255, 107, 0, 0.07) 0%, rgba(244, 244, 246, 0.95) 70%, var(--noir) 100%),
+              linear-gradient(180deg, #F4F4F6 0%, #FFFFFF 50%, #F4F4F6 100%);
+}
+
+:root[data-theme="light"] .hero-backdrop-grid {
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.035) 1px, transparent 1px);
+}
+
+:root[data-theme="light"] .btn--secondary {
+  border-color: #0F0F12;
+  color: #0F0F12;
+}
+
+:root[data-theme="light"] .btn--secondary:hover {
+  background-color: #0F0F12;
+  color: #FFFFFF;
+}
+
+:root[data-theme="light"] .mobile-nav-overlay {
+  background-color: #F4F4F6;
+}
+
+:root[data-theme="light"] .mobile-nav-header {
+  background: linear-gradient(180deg, #F4F4F6 0%, rgba(244, 244, 246, 0.95) 75%, transparent 100%);
+}
+
+:root[data-theme="light"] .mobile-nav-footer {
+  background: linear-gradient(0deg, #F4F4F6 0%, rgba(244, 244, 246, 0.95) 75%, transparent 100%);
+}
+
+:root[data-theme="light"] .mobile-close-x-btn,
+:root[data-theme="light"] .mobile-theme-btn {
+  background-color: rgba(225, 225, 232, 0.85);
+  border-color: #D1D1D8;
+  color: #0F0F12;
+}
+
+:root[data-theme="light"] .mobile-close-x-btn:hover,
+:root[data-theme="light"] .mobile-theme-btn:hover {
+  background-color: #FFFFFF;
+  color: var(--orange);
+  border-color: var(--orange);
+}
+
+:root[data-theme="light"] .mobile-nav-links .nav-link {
+  color: #555562;
+}
+
+:root[data-theme="light"] .mobile-nav-links .nav-link:hover,
+:root[data-theme="light"] .mobile-nav-links .nav-link.active {
+  color: #0F0F12;
+}
+
+:root[data-theme="light"] .about-graphic-svg rect[fill="url(#gradRadialDark)"] {
+  fill: #FFFFFF;
+  stroke: #E1E1E6;
+}
+
+:root[data-theme="light"] .about-graphic-svg line {
+  stroke: #E1E1E6;
+}
+
+:root[data-theme="light"] .about-graphic-svg circle[stroke="#1E1E1E"] {
+  stroke: #E1E1E6;
+}
+
+:root[data-theme="light"] .about-graphic-svg circle[fill="#141414"] {
+  fill: #F4F4F6;
+}
+
+:root[data-theme="light"] .about-graphic-svg path[fill="#FFFFFF"] {
+  fill: #0F0F12;
+}
+
+:root[data-theme="light"] .coach-avatar-svg circle[fill="#2A2A2A"],
+:root[data-theme="light"] .coach-avatar-svg path[fill="#2A2A2A"] {
+  fill: #EAEAEF;
+}
+
+:root[data-theme="light"] .coach-avatar-svg path[fill="#404040"] {
+  fill: #D8D8DF;
+}
+
+:root[data-theme="light"] .marker-pin {
+  border-color: #FFFFFF;
 }

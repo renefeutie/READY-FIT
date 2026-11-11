@@ -957,11 +957,116 @@ function setupBackToTop() {
 }
 
 /* ==========================================================================
-   13. INITIALISATION GLOBALE AU CHARGEMENT DU DOM
+   13. GESTION DU THÈME CLAIR / SOMBRE (INSTANTANÉ SANS RECHARGEMENT)
+   ========================================================================== */
+
+const THEME_STORAGE_KEY = 'ready_fit_theme';
+
+function getCurrentTheme() {
+  return document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+}
+
+function updateThemeAriaLabels(theme) {
+  const currentLang = getCurrentLang();
+  const label = theme === 'light'
+    ? (currentLang === 'en' ? 'Switch to dark mode' : 'Passer au mode sombre')
+    : (currentLang === 'en' ? 'Switch to light mode' : 'Passer au mode clair');
+
+  const themeToggle = document.getElementById('theme-toggle');
+  const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+
+  if (themeToggle) {
+    themeToggle.setAttribute('aria-label', label);
+    themeToggle.setAttribute('title', label);
+  }
+  if (mobileThemeToggle) {
+    mobileThemeToggle.setAttribute('aria-label', label);
+    mobileThemeToggle.setAttribute('title', label);
+  }
+}
+
+function setTheme(theme) {
+  if (theme === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+  } else {
+    document.documentElement.removeAttribute('data-theme');
+  }
+
+  try {
+    localStorage.setItem(THEME_STORAGE_KEY, theme);
+  } catch (err) {
+    console.warn('LocalStorage non disponible pour le thème :', err);
+  }
+
+  updateThemeAriaLabels(theme);
+}
+
+function toggleTheme() {
+  const current = getCurrentTheme();
+  const next = current === 'light' ? 'dark' : 'light';
+  setTheme(next);
+}
+
+function setupThemeToggle() {
+  // Détection du thème enregistré ou de la préférence système
+  let savedTheme = 'dark';
+  try {
+    const stored = localStorage.getItem(THEME_STORAGE_KEY);
+    if (stored === 'light' || stored === 'dark') {
+      savedTheme = stored;
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+      savedTheme = 'light';
+    }
+  } catch {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+      savedTheme = 'light';
+    }
+  }
+
+  setTheme(savedTheme);
+
+  // Écouteurs sur les boutons
+  const themeToggle = document.getElementById('theme-toggle');
+  const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+
+  themeToggle?.addEventListener('click', (e) => {
+    e.preventDefault();
+    toggleTheme();
+  });
+
+  mobileThemeToggle?.addEventListener('click', (e) => {
+    e.preventDefault();
+    toggleTheme();
+  });
+
+  // Mise à jour des libellés lors du changement de langue
+  window.addEventListener('languageChanged', () => {
+    updateThemeAriaLabels(getCurrentTheme());
+  });
+
+  // Écouteur pour changement de préférence système (si non fixé par l'utilisateur)
+  try {
+    window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
+      try {
+        if (!localStorage.getItem(THEME_STORAGE_KEY)) {
+          setTheme(e.matches ? 'light' : 'dark');
+        }
+      } catch {
+        // Ignorer
+      }
+    });
+  } catch {
+    // Navigateurs sans matchMedia.addEventListener
+  }
+}
+
+/* ==========================================================================
+   14. INITIALISATION GLOBALE AU CHARGEMENT DU DOM
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Initialiser le système i18n
+  // 1. Initialiser le thème (clair/sombre) et le système i18n
+  setupThemeToggle();
   initI18n();
 
   // 2. Initialiser tous les composants interactifs

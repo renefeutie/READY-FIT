@@ -23,6 +23,9 @@ export const translations = {
     nav_contact: "Contact",
     nav_join: "Rejoindre",
     nav_lang_label: "Sélecteur de langue",
+    theme_toggle_label: "Changer de thème (Clair / Sombre)",
+    theme_to_light: "Passer au mode clair",
+    theme_to_dark: "Passer au mode sombre",
     menu_notch_close: "Sortir du menu",
     menu_close: "Fermer le menu",
 
@@ -264,6 +267,9 @@ export const translations = {
     nav_contact: "Contact",
     nav_join: "Join Now",
     nav_lang_label: "Language switch",
+    theme_toggle_label: "Toggle theme (Light / Dark)",
+    theme_to_light: "Switch to light mode",
+    theme_to_dark: "Switch to dark mode",
     menu_notch_close: "Exit menu",
     menu_close: "Close menu",
 
